@@ -28,6 +28,8 @@ html{
 }
 
 body{
+background-color: var(--cream);
+
   display:flex;
   flex-flow:column;
   justify-content:center;
@@ -35,39 +37,38 @@ body{
 }
 
 .main{
-    /* width: 100%;
-    height: auto; */
-    display:flex;
+     width: 100%;
+    height: auto; 
+     display:flex;
     flex-flow:column;
     justify-content:center;
-    align-items:center;
+    align-items:center; 
+} 
+.main__card {
+    width: 600px;
+    height: 450px;
+      
+    display: flex;
+    flex-flow: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 15px;
+    overflow: hidden;
 }
- .main__card {
-      width: 600px;
-      height: 450px;
-        
-      display: flex;
-      flex-flow: column;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
 
-    .card__left {
-        background-color: blue;
-        width: 300px;
-        height: 450px;
-      }
+.card__left {
+    background-color: var(--white);
+    width: 300px;
+    height: 450px;
+}
 
     .card__left--img {
       margin: auto;
     }
-
-    .card__right--article {
-    padding: 30px;
-    }
-    .card__right {
-        background-color: yellow;
+        .card__right {
+        background-color: var(--white);
         color: black;
         width: 300px;
         height: 450px;
@@ -75,13 +76,19 @@ body{
 
       font-family: var(--font-family-monserrat);
     }
+
+    .card__right--article {
+    padding: 30px;
+    }
+
     .card__right--subtitle{
-      font-size: 14px;
+      color: var(--dark-cyan);
+      font-size: 12px;
       margin-bottom: 25px;
+      letter-spacing: 5px;
     }
     .card__right--title{
-      background-color: blue;
-      color: white;
+      color:var(--very-dark-blue);
       font-size: 32px;
       font-weight: 700;
       line-height: 35px;
@@ -89,7 +96,7 @@ body{
       font-family: var(--font-family-fraunces);
     }
     .card__right--paragraph{
-      background-color: gray;
+      color: var(--dark-cyan);
       font-size: 14px;
       font-weight: 500;
       letter-spacing: .5px;
@@ -104,37 +111,36 @@ body{
       margin-bottom: 30px;
     }
     .value__sale{
-      background-color: burlywood;
+      color:var(--dark-cyan);
       font-family: var(--font-family-fraunces);
       font-size: 32px;
       font-weight: 700;
       margin-right: 20px;
     }
     .value__total{
-      background-color: lightyellow;
+      color: var(--dark-cyan);
       font-family: var(--font-family-monserrat);
       font-weight: 500;
       text-decoration: line-through;
     }
     .paragraph__button{
-      background-color: beige;
+      background-color:var(--dark-cyan);
       width: 236px;
       padding: 15px 32px 15px 32px;
+
+      display:flex;
+      flex-flow:row;
+      justify-content:center;
+      align-items:center;
     }
     .button__img{
       width: 14px;
 
     }
 /* ========== footer ==========*/
-.footer__card{
-  width: 600px;
-  display:flex;
-  flex-flow:row;
-  justify-content:center;
-  align-items:center;
-  color: black;
-}
+
     .attribution {
+      display: flex;
       font-size: 11px;
       text-align: center;
     }
